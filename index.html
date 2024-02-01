@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wall {
+            margin: 50px auto;
+            position: relative;
+            /* border: 1px solid lightgrey; */
+            width: 514px;
+            height: calc(23px + 33px + 43px * 5 + 30px);
+        }
+
+        .shelf {
+            position: absolute;
+            border-bottom: 10px solid sandybrown;
+            text-align: center;
+            display: flex;
+            align-items: bottom;
+            justify-content: center;
+        }
+
+        .heigh-notation {
+            position: absolute;
+            text-align: center;
+            left: 525px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wall">
+        <div class="shelf" style="top: 23px; left: 0px; width: 514px;">514cm</div>
+
+        <div class="shelf" style="top: calc(10px * 1 + 23px + 33px); left: 0px; width: 73px">73cm</div>
+        <div class="shelf" style="top: calc(10px * 1 + 23px + 33px); left: calc(73px + (514px - 73px - 114px - 177px)/2); width: 114px">114cm</div>
+        <div class="shelf" style="top: calc(10px * 1 + 23px + 33px); left: calc(73px + 114px + (514px - 73px - 114px - 177px)); width: 177px">177cm</div>
+
+        <div class="shelf" style="top: calc(10px * 2 + 23px + 33px + 43px); left: 0px; width: 73px">73cm</div>
+        <div class="shelf" style="top: calc(10px * 2 + 23px + 33px + 43px); left: calc(73px + (514px - 73px - 114px - 177px)/2); width: 114px">114cm</div>
+        <div class="shelf" style="top: calc(10px * 2 + 23px + 33px + 43px); left: calc(73px + 114px + (514px - 73px - 114px - 177px)); width: 177px">177cm</div>
+
+        <div class="shelf" style="top: calc(10px * 3 + 23px + 33px + 43px * 2); left: 73px; width: 441px;">441cm</div>
+
+        <div class="shelf" style="top: calc(10px * 4 + 23px + 33px + 43px * 3); left: 73px; width: 441px;">441cm</div>
+
+        <div class="shelf" style="top: calc(10px * 5 + 23px + 33px + 43px * 4); left: 73px; width: 441px;">441cm</div>
+
+        <div class="shelf" style="top: calc(10px * 6 + 23px + 33px + 43px * 5); left: 73px; width: 441px;">441cm</div>
+
+        <div class="heigh-notation" style="top: calc(23px / 2);">23cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px + 33px / 2);">33cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px * 2 + 33px + 43px / 2);">43cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px * 3 + 33px + 43px * 1.5);">43cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px * 4 + 33px + 43px * 2.5);">43cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px * 5 + 33px + 43px * 3.5);">43cm</div>
+        <div class="heigh-notation" style="top: calc(23px + 10px * 6 + 33px + 43px * 4.5);">43cm</div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
